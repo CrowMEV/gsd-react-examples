@@ -11,27 +11,11 @@ import Purchases, {
 } from "./components/Purchases/Purchase";
 import TrackerForm from "./components/TrackerForm/TrackerForm";
 
-// type MyComponentType = {
-//   title?: string;
-// } & typeof defaultProps;
-
-// const defaultProps = {
-//   title: "Hello",
-// };
-
-// const MyComponent = ({ title }: MyComponentType) => {
-//   return <h1>{title}</h1>;
-// };
-
-// MyComponent.defaultProps = defaultProps;
-
-// const obj = {
-//   className: "Hanna",
-//   age: 21,
-//   role: "Aдмин"
-// }
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <TrackerForm />
+    <>
+    <Purchases RenderCompnent={PurchasesRender} />
+    <Purchases RenderCompnent={PurchasesRender2} />
+    </>
   </StrictMode>
 );

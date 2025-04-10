@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgb(146, 183, 224);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  background-color: rgb(98, 121, 224);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.steps-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 20px;
+  background-color: #23d1b4;
+}
+
+.steps-table th,
+.steps-table td {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding: 5px;
+}
+
+.steps-table button {
+  margin-right: 5px;
+  cursor: pointer;
+  padding: 3px 5px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #d5ebff;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

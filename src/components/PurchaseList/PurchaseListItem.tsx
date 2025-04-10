@@ -4,7 +4,8 @@ type PurchaseItemType = {
   onRemove: (item: PurchaseType) => void;
 };
 
-export default function PurchaseItem({ item, onRemove }: PurchaseItemType) {
+export default function PurchaseItem(props: PurchaseItemType) {
+  const { item, onRemove } = props;
   return (
     <li>
       <h2>{item.title}</h2>
